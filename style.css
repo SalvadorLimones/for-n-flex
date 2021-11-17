@@ -46,4 +46,28 @@ button, input, textarea, select {
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+}
+
+#root div {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
+  border-radius: 50%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Special Elite', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+#root div:hover {
+  width: 105px;
+  height: 105px;
+  margin: 7.5px;
+  font-size: 22px;
 }
