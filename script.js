@@ -6,16 +6,23 @@ const generateArray = function (amount){
   let amountConverted = parseInt(amount);
   amount = amountConverted;
   */
-  amount = parseInt(amount);
-  /*
-  console.log(amount);
-  console.log(typeof amount);
-  */
-  
+ amount = parseInt(amount);
+ /*
+ console.log(amount);
+ console.log(typeof amount);
+ */
+
+function addZero(thisNum,maxNum){
+ let zeros ="";
+ for (let j = thisNum.toString().length; j < maxNum.toString().length; j++){
+  zeros += "0";
+ }
+ return zeros;
+}     
   // Number.isNaN(amount) !== true;
   if (!Number.isNaN(amount)){
     for (let i = 0; i < amount; i++) {
-      returnArray.push(`${i}`);
+      returnArray.push(`${addZero(i,amount)}${i}`);
     }
   } else {
       returnArray.push("error");
@@ -35,7 +42,7 @@ function loadEvent() {
   */
 
   const root = document.getElementById("root");
-  const list = generateArray(100);
+  const list = generateArray(50);
   
   if (list[0] !== "error") {
     for (const item of list){
