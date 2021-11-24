@@ -43,7 +43,7 @@ function loadEvent() {
   */
 
   const root = document.getElementById("root");
-  const list = generateArray(72);
+  const list = generateArray(20);
   
   if (list[0] !== "error") {
     for (const item of list){
